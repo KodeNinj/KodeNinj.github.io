@@ -1,0 +1,100 @@
+body {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1ba1ad;
+}
+
+.mainContainer {
+  position: relative;
+  margin-top: 20vh;
+}
+
+.mainContainer .theCard {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 450px;
+  background: url(/image/bg-pattern-card.svg);
+  border-radius: 20px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.mainContainer .theCard .top {
+  height: 300px;
+  position: relative;
+}
+.mainContainer .theCard .top img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  border-radius: 100px;
+  border: 10px solid white;
+  align-items: center;
+  font-family: "kumbh sans";
+}
+
+.mainContainer .theCard .mainCard {
+  height: 250px;
+  background-color: white;
+}
+
+.mainContainer .theCard .footerCard {
+  border-top: 1px solid rgba(165, 159, 159, 0.514);
+  display: flex;
+  justify-content: space-around;
+}
+.mainCard {
+  text-align: center;
+  padding-top: 90px;
+}
+.mainCard h3 {
+  font-size: 23px;
+  font-family: "kumbh sans";
+}
+.mainCard p {
+  font-size: 15px;
+  color: grey;
+  font-family: "kumbh sans";
+  font-weight: bold;
+}
+.mainCard h3 span {
+  color: grey;
+  margin-left: 3px;
+  font-family: "kumbh sans";
+  font-size: 17px;
+}
+.footerCard {
+  background-color: rgba(255, 255, 255, 0.938);
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  position: relative;
+}
+.footerCard p,
+.footerCard h2 {
+  text-align: center;
+  font-family: "kumbh sans";
+  text-align: center;
+  justify-content: center;
+}
+.footerCard p {
+  color: grey;
+  top: 40px;
+}
+#topPattern,
+#bottomPattern {
+  position: absolute;
+  width: 800px;
+  z-index: -1;
+}
+#topPattern {
+  top: -120%;
+  left: -10%;
+}
+#bottomPattern {
+  bottom: -120%;
+  right: -130px;
+}
